@@ -24,4 +24,6 @@ _testmain.go
 *.prof
 
 *~
+*.swp
 src/web/test/*
+
