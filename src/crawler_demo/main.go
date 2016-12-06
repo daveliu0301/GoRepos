@@ -2,19 +2,19 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"io/ioutil"
+	"net/http"
 )
 
 func main() {
 	resp, err := http.Get("https://bing.com")
-	if err != nil{
+	if err != nil {
 		fmt.Println(err)
-		return	
+		return
 	}
 	defer resp.Body.Close()
 	data, err := ioutil.ReadAll(resp.Body)
-	if err != nil{
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
@@ -22,7 +22,7 @@ func main() {
 	fmt.Printf("status: %d\n", resp.StatusCode)
 
 	err = ioutil.WriteFile("./temp/data", data, 0664)
-	if err != nil{
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
