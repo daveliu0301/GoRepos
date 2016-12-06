@@ -4,9 +4,9 @@
 </head>
 <body>
 <form action="/login" method="post">
-    ำรปงร๛:<input type="text" name="username">
-    รÜย๋:<input type="password" name="password">
-    <input type="submit" value="ตวยฝ">
+    ๅธๅท:<input type="text" name="username">
+    ๅฏ็ :<input type="password" name="password">
+    <input type="submit" value="็ปๅฝ•">
 </form>
 </body>
 </html>
